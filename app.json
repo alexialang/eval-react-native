@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "reactEval",
-    "slug": "reactEval",
+    "name": "Transport Exceptionnel",
+    "slug": "transport-exceptionnel",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "reacteval",
+    "scheme": "transport-exceptionnel",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -25,6 +25,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Cette application a besoin d'accéder à votre position pour enregistrer les coordonnées des obstacles."
+        }
+      ],
       [
         "expo-splash-screen",
         {
